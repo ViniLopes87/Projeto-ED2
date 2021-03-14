@@ -6,6 +6,7 @@ public class No {
     public No esquerda;
     public No direita;
     public No pai;
+    public int fator;
 
     public No(int chave) {
         this.chave = chave;
@@ -13,6 +14,14 @@ public class No {
 
     public int getChave() {
         return chave;
+    }
+    
+    public int getFator(){
+        return fator;
+    }
+    
+    public void setFator(int fator){
+        this.fator = fator;
     }
 
     @SuppressWarnings("unchecked")
@@ -27,5 +36,21 @@ public class No {
 
     public void setChave(int chave) {
         this.chave = chave;
+    }
+    
+    public void setDireita(No direita) {
+        this.direita = direita;
+    }
+
+    public void setEsquerda(No esquerda) {
+        this.esquerda = esquerda;
+    }
+    
+    public No getPai() {
+        return pai;
+    }
+
+    public void setPai(No pai) {
+        this.pai = pai;
     }
 }
